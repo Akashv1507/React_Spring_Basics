@@ -8,6 +8,7 @@ import {
 import RootLayout from "./pages/RootLayout";
 import RootHome from "./pages/RootHome";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import AdminLayout from "./pages/AdminLayout";
 import AdminHome from "./pages/AdminHome";
 import AdminSignup from "./pages/AdminSignup";
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <RootHome /> },
       { path: "login", element: <Login /> },
+      { path: "profile", element: <Profile /> },
     ],
   },
 
