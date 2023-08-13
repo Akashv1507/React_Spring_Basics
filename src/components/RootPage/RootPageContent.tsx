@@ -1,12 +1,12 @@
 import classes from "./RootPageContent.module.css";
 import TodoHome from "../Todos/TodoHome";
+import { Link } from "react-router-dom";
 
-
-const RootPageContent:React.FC = () => {
+const RootPageContent: React.FC = () => {
   return (
     <section className={classes.starting}>
       <h1>Welcome on Board!</h1>
-      <TodoHome></TodoHome>
+      <Link to="todos"> Manage Your Todos</Link>
     </section>
   );
 };

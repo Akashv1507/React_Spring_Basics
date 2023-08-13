@@ -12,7 +12,7 @@ import Profile from "./pages/Profile";
 import AdminLayout from "./pages/AdminLayout";
 import AdminHome from "./pages/AdminHome";
 import AdminSignup from "./pages/AdminSignup";
-
+import TodoHome from "./components/Todos/TodoHome";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
       { index: true, element: <RootHome /> },
       { path: "login", element: <Login /> },
       { path: "profile", element: <Profile /> },
+      { path: "todos", element: <TodoHome /> },
     ],
   },
 

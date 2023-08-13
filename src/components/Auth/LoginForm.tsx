@@ -1,15 +1,18 @@
 import React, { useState, useRef, useContext } from "react";
-import {Form,useNavigate,useNavigation,useActionData,json,redirect} from 'react-router-dom';
+import {
+  Form,
+  useNavigate,
+  useNavigation,
+  useActionData,
+  json,
+  redirect,
+} from "react-router-dom";
 import AuthContext from "../../store/auth-context";
 import Button from "react-bootstrap/Button";
 import classes from "./AuthForm.module.css";
 import MsgModal from "../UI/MsgModal";
 import { useAlert } from "react-alert";
-
-interface Imsg {
-  title: string;
-  message: string;
-}
+import Imsg from "../interfaces/ErrorMsg";
 
 export interface ILoginResp {
   token?: string;
@@ -25,7 +28,7 @@ const LoginForm: React.FC = () => {
   const passwordInputRef = useRef<HTMLInputElement>(null);
   const authCtx = useContext(AuthContext);
   const alert = useAlert();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const submitHandler = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -56,7 +59,7 @@ const LoginForm: React.FC = () => {
     alert.show("Welcome on board !! You are successfully logged in", {
       type: "success",
     });
-    navigate("..")
+    navigate("..");
   };
 
   const errorHandler = () => {
