@@ -13,7 +13,7 @@ const TodoHome: React.FC = () => {
   return (
     <>
       <NewTodo onAddTodo={addTodoHandler}></NewTodo>
-      <TodoList todos={todos}></TodoList>
+      <TodoList todos={todos} tblId="todoListTbl"></TodoList>
     </>
   );
 };
