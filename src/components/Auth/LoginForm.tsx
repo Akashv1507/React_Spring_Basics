@@ -1,12 +1,5 @@
 import React, { useState, useRef, useContext } from "react";
-import {
-  Form,
-  useNavigate,
-  useNavigation,
-  useActionData,
-  json,
-  redirect,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AuthContext from "../../store/auth-context";
 import Button from "react-bootstrap/Button";
 import classes from "./AuthForm.module.css";

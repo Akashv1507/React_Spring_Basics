@@ -1,11 +1,11 @@
 import classes from "./NewTodo.module.css";
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useRef } from "react";
 import Imsg from "../interfaces/ErrorMsg";
 import MsgModal from "../UI/MsgModal";
 import { useAlert } from "react-alert";
 import ITodos from "../interfaces/Todos";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
 interface INewTodoProps {
   children?: React.ReactNode;
@@ -61,7 +61,7 @@ const NewTodo: React.FC<INewTodoProps> = (props) => {
         />
       )}
       <div className="p-1 h1 text-primary text-center mx-auto mt-5 display-inline-block">
-      <FontAwesomeIcon icon={faCheckSquare } />
+        <FontAwesomeIcon icon={faCheckSquare} />
         <u>My Todo-s</u>
       </div>
       <div className={classes.container}>

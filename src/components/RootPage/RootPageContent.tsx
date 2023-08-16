@@ -1,5 +1,4 @@
 import classes from "./RootPageContent.module.css";
-import TodoHome from "../Todos/TodoHome";
 import { Link } from "react-router-dom";
 
 const RootPageContent: React.FC = () => {
