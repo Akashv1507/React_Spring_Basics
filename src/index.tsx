@@ -14,7 +14,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const options = {
   // you can also just use 'bottom center'
   position: positions.BOTTOM_CENTER,
-  timeout: 5000,
+  timeout: 1000,
   offset: "100px",
   containerStyle: {
     zIndex: 100,
